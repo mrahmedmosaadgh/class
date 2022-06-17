@@ -1,0 +1,29 @@
+composer install
+npm install
+copy .env.example .env
+spa-vue
+php artisan key:generate
+php artisan migrate
+npm install
+npm run dev
+php artisan serve
+php artisan make:model StudentsAbsence -a
+php artisan make:model Todo -mcr
+php artisan make:model StudentsParticipate -a
+StudentsAbsenceController
+php artisan make:controller FileUploadController
+php artisan make:model File -m
+
+
+ $table->id();
+            $table->string('name')->nullable();
+            $table->string('file_path')->nullable();
+            $table->timestamps();
+protected $fillable = [
+        'name',
+        'file_path'
+    ];
+php artisan migrate
+
+php artisan make:migration create_marks_table
+php artisan make:model Marksschooldev -a
